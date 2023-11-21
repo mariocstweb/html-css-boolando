@@ -8,4 +8,54 @@
 
 body {
   font-family: sans-serif;
+  padding-top: 80px;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*  Header  */
+
+header {
+  color: white;
+  position: fixed;
+  background-color: #ff6900;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-logo {
+  height: 30px;
+  width: auto;
+}
+
+.navbar-filter ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.navbar-actions ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------- */
