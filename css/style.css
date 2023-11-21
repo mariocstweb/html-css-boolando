@@ -8,7 +8,7 @@
 
 body {
   font-family: sans-serif;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .container {
@@ -29,7 +29,7 @@ header {
 }
 
 .navbar {
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,3 +59,38 @@ a {
 }
 
 /* -------------------------------------------------------------- */
+
+.bgc-green {
+  background-color: #008000;
+}
+
+.bgc-red {
+  background-color: #ff0000;
+}
+
+/* -------------------------------------------------------------- */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  max-width: 100%;
+  height: auto;
+}
+
+.col {
+  border: 1px solid black;
+  flex-basis: calc(100% / 12 * 3);
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+.discount {
+}
