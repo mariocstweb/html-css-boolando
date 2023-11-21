@@ -26,6 +26,7 @@ header {
   left: 0;
   right: 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 .navbar {
@@ -40,14 +41,16 @@ header {
   width: auto;
 }
 
-.navbar-filter ul {
+/* .navbar-filter  */
+ul {
   list-style: none;
   display: flex;
   gap: 20px;
   font-weight: bold;
 }
 
-.navbar-actions ul {
+/* .navbar-actions  */
+ul {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -74,23 +77,109 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  /* gap: 1px; */
 }
 
 .card {
-  max-width: 100%;
-  height: auto;
+  position: relative;
 }
 
 .col {
-  border: 1px solid black;
-  flex-basis: calc(100% / 12 * 3);
+  flex-basis: calc(100% / 3);
+  padding: 10px;
 }
 
 main img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .discount {
+  display: inline-block;
+  color: white;
+  position: relative;
+  padding: 4px 10px;
+}
+
+.ecofriendly {
+  padding: 4px 15px;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.binario {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 90px;
+}
+
+.favorites {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .heart-icon {
+  width: 20px;
+  height: 35px;
+} */
+
+.red-price {
+  color: red;
+  font-size: bold;
+  font-size: larger;
+}
+
+.black-price {
+  color: black;
+  text-decoration: line-through;
+  font-size: large;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/* .card:hover{
+  position: absolute;
+  color: red;
+} */
+
+.prima-img:hover {
+  position: absolute;
+}
+
+/* .card:hover::after {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+/* Footer */
+
+footer {
+  background-color: #1a1a1a;
+  height: 100px;
+  color: white;
+}
+
+.ftr-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
